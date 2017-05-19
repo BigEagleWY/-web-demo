@@ -54,3 +54,36 @@ tap基础事件
 （1）上下都是tap（规范，但是无法解决原生标签的一些click事件，比如a标签）
 （2）上层缓慢消失
 （3）增加中间层
+
+
+4.弹性滚动
+
+
+
+备注：
+body层滚动
+（1）自带弹性滚动
+（2）overflow:hidden;会失效
+（3）GIF和定时器会被暂停
+局部滚动
+（1）没有弹性滚动
+
+
+body为局部添加弹性滚动
+body{
+	overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+}
+ 注意：Android不支持原生的弹性滚动。
+
+
+
+ 5.下拉刷新、上拉加载
+
+ 下拉刷新 -- touch事件
+ 上拉加载 -- scroll事件
+ android 有bug
+
+
+
+
