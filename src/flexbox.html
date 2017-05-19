@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>flexbox弹性盒子</title>
+	<style type="text/css">
+		body{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		ul li:first-child{
+			background-color: red;
+		}
+		ul li:first-child+li{
+			background-color: yellow;
+		}
+		ul li:first-child+li+li{
+			background-color: green;
+		}
+		.flex-1{
+			display: -webkit-flex;
+		}
+
+		.flex-1 li{
+			flex: 1;
+		}
+		
+		.flex-2{
+			display: -webkit-flex;
+			flex-direction: row;
+		}
+		.flex-2 li:first-child{
+			flex: 1;
+		}
+		.flex-2 li:first-child+li{
+			flex: 2;
+		}
+		.flex-2 li:first-child+li+li{
+			flex: 3;
+		}
+		.flex-3{
+			display: -webkit-flex;
+			flex-direction: row-reverse;
+		}
+		.flex-3 li:first-child{
+			flex: 1;
+		}
+		.flex-3 li:first-child+li{
+			flex: 2;
+		}
+		.flex-3 li:first-child+li+li{
+			flex: 3;
+		}
+		.flex-4{
+			display: -webkit-flex;
+			flex-direction: column;
+		}
+		.flex-4 li:first-child{
+			flex: 1;
+		}
+		.flex-4 li:first-child+li{
+			flex: 2;
+		}
+		.flex-4 li:first-child+li+li{
+			flex: 3;
+		}
+		.flex-5{
+			display: -webkit-flex;
+			flex-direction: column-reverse;
+		}
+		.flex-5 li:first-child{
+			flex: 1;
+		}
+		.flex-5 li:first-child+li{
+			flex: 2;
+		}
+		.flex-5 li:first-child+li+li{
+			flex: 3;
+		}
+
+
+
+		.flex-div{
+			display: -webkit-flex;
+			flex: 1;
+			margin: 0 10px;
+			height: 50px;
+			background: red;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="flex-1">
+		<li>导航1</li>
+		<li>导航2</li>
+		<li>导航3</li>
+	</ul>
+	<ul class="flex-2">
+		<li>导航1</li>
+		<li>导航2</li>
+		<li>导航3</li>
+	</ul>
+	<ul class="flex-3">
+		<li>导航1</li>
+		<li>导航2</li>
+		<li>导航3</li>
+	</ul>
+	<ul class="flex-4">
+		<li>导航1</li>
+		<li>导航2</li>
+		<li>导航3</li>
+	</ul>
+	<ul class="flex-5">
+		<li>导航1</li>
+		<li>导航2</li>
+		<li>导航3</li>
+	</ul>
+
+
+	<div class="flex-div"></div>
+</body>
+</html>

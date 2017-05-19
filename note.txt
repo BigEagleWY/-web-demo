@@ -1,0 +1,59 @@
+1. viewport
+
+
+
+2.flexbox弹性布局
+根据元素个数不同自动填充容器
+
+
+
+flex等比划分
+display:-webkit-flex; -- 弹性盒模型属性设置
+flex:1; -- 设置当前元素在盒子中所占的比例
+备注：弹性盒子模型不影响对元素进行margin的设置
+
+
+flex-direction:row; -- 弹性盒模型的方向，默认为水平
+flex-direction:row-reverse; -- 水平反向
+
+flex-direction:column; -- 垂直
+flex-direction:column-reverse; -- 垂直反向
+
+-webkit-flex-wrap:nowrap; -- 按比例充满父元素
+-webkit-flex-wrap:wrap; -- 按子元素原大小显示
+-webkit-flex-wrap:wrap-reverse; -- 反向展示子元素
+
+
+flex-flow:flex-direction flex-wrap; -- 两种属性合并简写的一种方式
+
+
+justify-content:space-between; -- 多余空间放在中间显示
+justify-content:space-around; -- 多余空间环绕两边显示
+
+align-self:flex-start;
+align-self:flex-center;
+align-self:flex-end;
+align-self:auto;
+align-self:baseline;
+align-self:stretch;
+align-item:flex-start;
+align-item:flex-center;
+align-item:flex-end;
+align-item:auto;
+align-item:baseline;
+align-item:stretch;
+
+
+order -- 排序属性
+
+
+
+
+
+
+
+
+
+
+
+不定宽高水平垂直居中
